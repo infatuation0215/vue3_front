@@ -47,8 +47,9 @@ const handleLogin = async () => {
   if (success) {
     message.success('登录成功');
     nextTick(() => {
-      router.push(form.role === 'admin' ? '/admin' : '/user');
-    });    
+      // router.push(form.role === 'admin' ? '/admin' : '/user');
+      router.push('/layout/home');
+    });
     console.log("跳转成功");
 
   } else {
